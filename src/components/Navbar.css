@@ -1,0 +1,71 @@
+.custom-navbar {
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.443); 
+    box-shadow: 0 4px 30px rgba(78, 78, 78, 0.1); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+    z-index: 999;
+  }
+  
+  .custom-navbar:hover {
+    background: #002f6c19
+  }
+  
+  .nav-link-custom {
+    color: #000 !important;
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+
+  .nav-button{
+    font-size: 1.3vw;
+  }
+  
+  .nav-link-custom:hover {
+    color: #ffb404 !important;
+  }
+  
+  .social-icon {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    color: #F9A825;
+  }
+  
+  .btn-warning {
+    background-color: #F9A825;
+    border: none;
+  }
+  
+  .btn-warning:hover {
+    background-color: #002F6C;
+    color: white;
+  }
+
+  .navItems {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    .burger-icon{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .burger-icon{
+      display: block;
+      color: black;
+    }
+    .navMenu{
+      display: none;
+    }
+    .navIcons{
+      position: absolute;
+    }
+  
+  }
+

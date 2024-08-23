@@ -1,0 +1,227 @@
+
+.banner {
+    text-align: center;
+  }
+  
+.banner-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .teamwork{
+    background-color: rgba(194, 193, 193, 0.594);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+  }
+ .team-work {
+    flex-direction: row;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+  }
+  
+/* .team-work  */
+.icon-img { 
+    width: 7vw;
+    margin-bottom: 10px;
+  }
+  
+.team-work p {
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+
+.about-us-section {
+    padding: 40px;
+}
+
+.about-us-text h2 {
+    color: #f1c40f;
+}
+
+.highlighted-text {
+    background-color: #f1c40f;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.card-hover {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}
+
+.card-hover:hover .icon-hover {
+  color: black; 
+}
+
+.icon-hover {
+  color: #f1c40f; 
+  transition: color 0.3s ease-in-out;
+}
+
+.card-hover:hover .card-title,
+.card-hover:hover .card-text {
+  color: white; 
+}
+
+.card-hover:hover .card-body {
+  background-color: #f1c40f; 
+  border-radius: 10px;
+}
+
+
+
+
+.regular-text p {
+    margin: 5px 0;
+}
+
+.profile-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.read-more-btn {
+    background-color: #f1c40f;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.image-grid-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.card-wrap{
+  margin: 13px;
+  width: 300px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.card-wrap:hover{
+  transform: scale(1.1);
+}
+
+.card-header{
+  height: 300px;
+  width: 100%;
+  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+}
+
+.card-header img{
+  width: inherit ;
+  border-radius: 20px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.card-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.card-text{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+
+
+.fixed-right {
+  transform: translateY(-50%);
+}
+
+h2 {
+  color: #000; /* Adjust this to match the yellow in the image */
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.content-row {
+  display: flex;
+  align-items: stretch; /* Ensure all columns are the same height */
+}
+
+.icon-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px; /* Adjust icon size as needed */
+  color: #f1c40f; /* Optional: add color to the icon */
+}
+
+.text-col h1 {
+  margin: 0;
+  font-size: 25px; /* Adjust font size as needed */
+  font-weight: 520;
+  padding: 5px;
+}
+
+.text-col p {
+  margin: 0;
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 5px;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-image {
+  width: 100%; 
+  height: auto;
+  max-height: 100%; /* Limit the height of the image to match the height of the section */
+  object-fit: cover; /* Cover ensures the image scales nicely */
+  border-radius: 10px; /* Optional: add rounded corners to the image */
+}
+
+.text-section {
+  padding: 10px 20px;
+}
