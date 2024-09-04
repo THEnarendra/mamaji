@@ -2,22 +2,25 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons'; // Correct import for faBars
 import './Navbar.css'; 
-import logo from "../images/jslee.png"
+import logo from "../images/jslee.png";
 import { Link } from 'react-router-dom';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
 const CustomNavbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
   const toggle = () => {
     setIsOpen(!isOpen);
-  }
+    console.log(isOpen)
+  };
 
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>
         <Row className="w-100 align-items-center">
-          <Col xs={2} md={2} lg={2}>
+          {/* Logo Column */}
+          <Col xs={6} md={2}>
             <Navbar.Brand as={Link} to="/">
               <img
                 src={logo}
@@ -28,21 +31,20 @@ const CustomNavbar = () => {
               />
             </Navbar.Brand>
           </Col>
-          <Col xs={8} md={7} lg={7} 
-          // className="nav-center-links"
-          className={isOpen ? "navMenu " : " navItems"} 
-          >
-            <Nav className="justify-content-center nav-link">
-              <Nav.Link as={Link} to="/" className="nav-link-custom mx-2 text-lg">Home</Nav.Link>
+
+          {/* Navigation Links Column */}
+          <Col xs={12} md={7} className={isOpen ? "mob-nav": "nav-Menu"}>
+            <Nav className="justify-content-center">
+              <Nav.Link as={Link} to="/" className="nav-link-custom mx-2">Home</Nav.Link>
               <Nav.Link as={Link} to="/aboutUs" className="nav-link-custom mx-2">About Us</Nav.Link>
               <Nav.Link as={Link} to="/projects" className="nav-link-custom mx-2">Our Projects</Nav.Link>
               <Nav.Link as={Link} to="/services" className="nav-link-custom mx-2">Services</Nav.Link>
               <Nav.Link as={Link} to="/contact" className="nav-link-custom mx-2">Contact Us</Nav.Link>
             </Nav>
           </Col>
-          <Col xs={2} md={3} lg={3} 
-          className={isOpen ? "navIcons " : " text-right d-flex justify-content-center align-items-center nav-center-icons"} 
-          >
+
+          {/* Icons and Burger Icon Column */}
+          <Col xs={6} md={3} className="d-flex justify-content-end align-items-center icons-burger">
             <Button variant="warning" className="mx-2 nav-button">Enquire Us</Button>
             <FontAwesomeIcon icon={faFacebookF} className="mx-2 social-icon" />
             <FontAwesomeIcon icon={faTwitter} className="mx-2 social-icon" />
@@ -50,7 +52,7 @@ const CustomNavbar = () => {
             <FontAwesomeIcon onClick={toggle} icon={faBars} className="burger-icon" />
           </Col>
         </Row>
-      </Container>
+        </Container>
     </Navbar>
   );
 }

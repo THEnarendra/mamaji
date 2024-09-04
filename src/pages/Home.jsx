@@ -22,7 +22,7 @@ const Home = () => {
     </Row>
 
 {/* Team Work Section */}
-<div className='teamwork'>
+<Container className='team-work-container'>
 <Row className=' justify-content-center team-work'>    
     <Col xs={2} md={2} lg={2} className="text-center">
       <img src={icon} alt="" className="icon-img" />
@@ -46,11 +46,12 @@ const Home = () => {
     </Col>
     
   </Row>
-</div>
+</Container>
+
     
 
 {/* Small About Us Section */}
-    <Row >
+    <Row style={{maxWidth: "100%"}}>
       <Col className="about-us-section">
             <Row>
                 <Col style={{padding:"20px"}}>
@@ -74,7 +75,7 @@ const Home = () => {
                 </Col>
             </Row>
 
-            <Row className="mt-4 align-items-center">
+            <Row className="w-100 mt-4 align-items-center">
                 <Col xs={12} md={8}>
                     <div className="profile-section d-flex align-items-center">
                         <img 
@@ -131,11 +132,11 @@ const Home = () => {
       </Col>
     </Row>
 
+ 
+{/* Our Services  */}
     <Row style={{background:'#e8e8e8', padding:"15px"}} className=' justify-content-center'>
     <h1 className='text-center'>We Provide Best Services in Jaipur</h1>
-      <div className="team-work">
-        
-      <Col className="card-wrap">
+      <Col lg={3} className='card-wrap'>
   <div className="card-header one">
     <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
   </div>
@@ -144,7 +145,7 @@ const Home = () => {
     <p className="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
   </div>
     </Col>
-      <Col xs={5} className="card-wrap">
+      <Col lg={3} className='card-wrap'>
   <div className="card-header one">
     <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
   </div>
@@ -153,7 +154,7 @@ const Home = () => {
     <p className="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
   </div>
     </Col>
-      <Col xs={5} className="card-wrap">
+      <Col lg={3} className='card-wrap'>
   <div className="card-header one">
     <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
   </div>
@@ -162,7 +163,7 @@ const Home = () => {
     <p className="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
   </div>
     </Col>
-      <Col className="card-wrap">
+      <Col lg={3} className='card-wrap'>
   <div className="card-header one">
     <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
   </div>
@@ -171,32 +172,16 @@ const Home = () => {
     <p className="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
   </div>
     </Col>
-      </div>
-
-
     </Row>
 
-    <Row style={{marginTop: "-100px"}}>
-      <div style={{position: "relative", top:"300px", background:"rgba(245, 0, 0, 0.39)"}} >
-      <h1 style={{fontSize:"60px", fontWeight:"600"}} className='d-flex justify-content-center '>Trusted By Indias Best Organizations</h1>
-      </div>
-      
-    <img src={banner2} alt="" className="icon-img" />
-    </Row>
-
-    <Row>
-      <img style={{width:"100vw"}} src={banner3} alt="" />
-      <img style={{position: "absolute", width: "400px"}} src={civilMan} alt="" />
-    </Row>
-
-    <Container className="my-5">
-      <Row className="text-center">
-        <Col>
+  
+{/* Planning */}
+    <div className='text-center'>
           <h2 className="text-uppercase fw-bold">Detailed Construction Planning By Experts</h2>
-        </Col>
-      </Row>
+    </div>
+
       <Row className="justify-content-center mt-4">
-        <Col xs={12} md={4} className="mb-4">
+        <Col xs={12} md={4} className="m-4 ">
           <Card className="h-100 shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
             <FontAwesomeIcon className="icon-hover" style={{fontSize:"50px", margin:"10px"}} icon={faHouse} />
@@ -254,8 +239,7 @@ const Home = () => {
           </Card>
         </Col>
       </Row>
-      
-    </Container>
+       
 
     <Row className='justify-content-center text-center'>
       <p style={{color:"#f1c40f", fontSize:"28px", marginBottom:"5px"}}>-- Anuda Constructions Process --</p>
@@ -266,14 +250,7 @@ const Home = () => {
 
     <Row>
       <img className='my-5' src={banner4} alt="" />
-      {/* <div style={{
-    position: 'relative',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', 
-  }}></div> */} 
+      
     </Row>
 
     <Row className='justify-content-center text-center' >

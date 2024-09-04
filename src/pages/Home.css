@@ -6,23 +6,21 @@
 .banner-img {
     width: 100%;
     height: auto;
+    padding: 0;
   }
 
-  .teamwork{
-    background-color: rgba(194, 193, 193, 0.594);
+  .team-work-container{
     padding: 2%;
-    display: flex;
-    justify-content: center;
   }
+
  .team-work {
     flex-direction: row;
-    width: 90%;
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(243, 243, 243);
   }
   
-/* .team-work  */
+  
 .icon-img { 
     width: 7vw;
     margin-bottom: 10px;
