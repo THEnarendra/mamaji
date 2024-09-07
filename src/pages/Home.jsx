@@ -103,12 +103,11 @@ const Home = () => {
 
       </Row>
 
-
-      <Row style={{ background: '#e8e8e8', padding: "15px" }} className=' justify-content-center'>
-        <h1 className='text-center'>We Provide Best Services in Jaipur</h1>
+      <Row style={{ background: '#e8e8e8'}} className='pb-4 justify-content-center'>
+        <h1 className='text-center mt-4 mb-3'>We Provide Best Services in Jaipur</h1>
         <Col lg={3} className='card-wrap'>
           <div className="card-header one">
-            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img className='mt-3 mb-3' src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           </div>
           <div className="card-content">
             <h1 className="card-title">Title</h1>
@@ -117,7 +116,7 @@ const Home = () => {
         </Col>
         <Col lg={3} className='card-wrap'>
           <div className="card-header one">
-            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img className='mt-3 mb-3' src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           </div>
           <div className="card-content">
             <h1 className="card-title">Title</h1>
@@ -126,7 +125,7 @@ const Home = () => {
         </Col>
         <Col lg={3} className='card-wrap'>
           <div className="card-header one">
-            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img className='mt-3 mb-3' src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           </div>
           <div className="card-content">
             <h1 className="card-title">Title</h1>
@@ -135,7 +134,7 @@ const Home = () => {
         </Col>
         <Col lg={3} className='card-wrap'>
           <div className="card-header one">
-            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img className='mt-3 mb-3' src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           </div>
           <div className="card-content">
             <h1 className="card-title">Title</h1>
@@ -143,14 +142,10 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-
-      <div className='text-center'>
-        <h2 className="text-uppercase fw-bold">Detailed Construction Planning By Experts</h2>
-      </div>
-
       <Row className="justify-content-center mt-4">
-        <Col xs={12} md={4} className="m-4 ">
-          <Card className="h-100 shadow-sm card-hover">
+        <h1 className="text-center mt-2 mb-2">Detailed Construction Planning By Experts</h1>
+        <Col xs={12} md={4} className='m-3'>
+          <Card className="shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
               <FontAwesomeIcon className="icon-hover" style={{ fontSize: "50px", margin: "10px" }} icon={faHouse} />
               <Card.Title>Consultancy in Architecture and Structure</Card.Title>
@@ -160,8 +155,8 @@ const Home = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={4} className="mb-4  ">
-          <Card className="h-100 shadow-sm card-hover">
+        <Col xs={12} md={4} className="m-3">
+          <Card className="shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
               <FontAwesomeIcon className="icon-hover" style={{ fontSize: "50px", margin: "10px" }} icon={faHouse} />
               <Card.Title>2D and 3D Construction Layout</Card.Title>
@@ -171,7 +166,7 @@ const Home = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={4} className="mb-4  ">
+        <Col xs={12} md={4} className="m-3">
           <Card className="h-100 shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
               <FontAwesomeIcon className="icon-hover" style={{ fontSize: "50px", margin: "10px" }} icon={faHouse} />
@@ -184,7 +179,7 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="justify-content-center mt-4">
-        <Col md={4} className="mb-4  ">
+        <Col md={4} className="m-3">
           <Card className="h-100 shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
               <FontAwesomeIcon className="icon-hover" style={{ fontSize: "50px", margin: "10px" }} icon={faHouse} />
@@ -195,7 +190,7 @@ const Home = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-4  ">
+        <Col md={4} className="m-3">
           <Card className="h-100 shadow-sm card-hover">
             <Card.Body className="d-flex flex-column align-items-center">
               <FontAwesomeIcon className="icon-hover" style={{ fontSize: "50px", margin: "10px" }} icon={faHouse} />
@@ -207,15 +202,12 @@ const Home = () => {
           </Card>
         </Col>
       </Row>
-
-
-      <Row className='justify-content-center text-center'>
+      <Row className='justify-content-center text-center mt-5'>
         <p style={{ color: "#f1c40f", fontSize: "28px", marginBottom: "5px" }}>-- Anuda Constructions Process --</p>
         <hr style={{ width: "40%", textAlign: "left", marginLeft: "0", height: "4px", borderRadius: "10px", }} />
-        <h2 style={{ fontWeight: "520", fontSize: "40px", marginBottom: "30px" }}>How We Make Home Construction Easy</h2>
+        <h1 className='mb-5'>How We Make Home Construction Easy</h1>
         <img style={{ width: "50vw" }} src={map} alt="" />
       </Row>
-
       <Row>
         <img className='my-5' src={banner4} alt="" />
 
@@ -224,7 +216,7 @@ const Home = () => {
       <Row className='justify-content-center text-center' >
         <p style={{ color: "#f1c40f", fontSize: "28px", marginBottom: "5px" }}>-- Why Choose JSLEE Architects --</p>
         <hr style={{ width: "30%", textAlign: "left", marginLeft: "0", height: "4px", borderRadius: "10px", }} />
-        <h2 style={{ fontWeight: "520", fontSize: "40px", marginBottom: "30px" }}>Enjoy Unlimited Access</h2>
+        <h1 className=''>Enjoy Unlimited Access</h1>
       </Row>
 
 

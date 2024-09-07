@@ -45,6 +45,7 @@
 .card-hover {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  
 }
 
 .card-hover:hover {
@@ -100,23 +101,24 @@
 }
 
 .card-wrap{
-  margin: 13px;
-  width: 300px;
+  margin: 11px;
+  width: 310px;
   background: #fff;
   border-radius: 20px;
   border: 5px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
               rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .card-wrap:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card-header{
-  height: 300px;
+  background-color: none;
+  /* height: 300px; */
   width: 100%;
   border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
   display: grid;
@@ -148,7 +150,8 @@
 .card-text{
   text-align: center;
   font-size: 12px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 230px;
 }
 
 
