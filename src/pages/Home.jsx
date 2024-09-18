@@ -15,7 +15,9 @@ import { Container, Row, Col, ProgressBar, Card, Button } from 'react-bootstrap'
 const Home = () => {
   return (
     <>
+    <Row>
       <img className="banner-img" src={banner} alt="" />
+    </Row>
       <Row className=' justify-content-center team-work'>
         <Col className="text-center">
           <img src={icon} alt="" className="icon-img" />
